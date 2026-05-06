@@ -1,0 +1,6 @@
+Me falto el css por falta de tiempo, 
+no complete mas porque seria usar la IA para completarlo.
+Use de referencia anteriores codigos de php para crear el codigo.
+cuando no recuerdo codigo suelo apoyarme en anteriores codigos para no usar IA.
+lo cual suelo tardar bastante.
+Cuando no repito o practico en este caso codigo, no suelo recordarlo, lamentablemente.
