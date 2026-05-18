@@ -1,0 +1,18 @@
+Pedro Jose Masrin Acosta
+Descripción del sistema
+
+CASO:
+Un GPS simplificado encuentra rutas entre ciudades en un mapa representado como grafo. 
+Implementarás el algoritmo de búsqueda dos veces: una versión recursiva (usando la pila de llamadas del sistema)
+y una iterativa (gestionando la pila de forma explícita). Ambas deben producir el mismo resultado.
+Operaciones que debe soportar
+
+    Encontrar una ruta entre dos ciudades de forma recursiva.
+    Encontrar la misma ruta de forma iterativa usando una pila explícita.
+    Medir y comparar el tiempo de ejecución y el uso de memoria de ambas versiones con al menos 3 
+    tamaños de grafo distintos.
+
+Pregunta central: ¿En qué escenarios la versión recursiva es más clara o eficiente? 
+¿Cuándo la iterativa es preferible? ¿Qué riesgo concreto tiene la recursión profunda y cómo lo mitigarías? 
+
+https://youtu.be/GeVTj5yPg2g
