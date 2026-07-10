@@ -1,0 +1,118 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg: #000000;
+    --surface: #3F3F3F;
+    --primary: #8CA1FF;
+    --primary-dark: #3F5CE4;
+    --secondary: #C469FF;
+    --danger: #FF000C;
+    --succes: #5AFF00;
+    --warning: #ffb150;
+    --text: #FFFF;
+    --muted: #b5b5b5;
+    --radius: 10px;
+    --shadow: 0 4px 16px rgba(255, 255, 255, 0.50);
+    --font: "Segeo UI", system-ui, sans-serif;
+    --mono: "Cascadia Code", "Fira Code", "Consolas", monospace;
+}
+body{
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding-bottom: 3rem;
+}
+header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+  opacity: 0.9;
+}
+header code {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-family: var(--mono);
+}
+main {
+  max-width: 780px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.8rem 2rem;
+}
+.card h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card:nth-child(1) h2 { color: var(--primary); }
+.card:nth-child(2) h2 { color: var(--success); }
+.card:nth-child(3) h2 { color: var(--warning); }
+.card:nth-child(4) h2 { color: var(--danger); }
+
+.card p {
+  color: var(--muted);
+  font-size: 0.93rem;
+  margin-bottom: 1rem;
+}
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 0.55rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: var(--font);
+  transition: background 0.2s, transform 0.1s, opacity 0.2s;
+  background: var(--primary);
+  color: #fff;
+}
+button:hover  { background: var(--primary-dark); }
+button:active { transform: scale(0.97); }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+#btn-post   { background: var(--success); }
+#btn-post:hover   { background: #26a99e; }
+
+#btn-put    { background: var(--warning); }
+#btn-put:hover    { background: #e88c0a; }
+
+#btn-delete { background: var(--danger); }
+#btn-delete:hover { background: #c81a32; }
+
+@media (max-width: 600px) {
+  header h1 { font-size: 1.8rem; }
+  .card { padding: 1.2rem 1.2rem; }
+}
